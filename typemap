@@ -1,0 +1,168 @@
+# this typemap is only used by xsubpp
+# to marshal THIS in xs code
+QSignalSpy *                            		T_PTROBJ_0000
+QTestElementAttribute *                 		T_PTROBJ_0001
+QSysInfo *                              		T_PTROBJ_0002
+QFlag *                                 		T_PTROBJ_0003
+QIncompatibleFlag *                     		T_PTROBJ_0004
+QInternal *                             		T_PTROBJ_0005
+QTestXunitStreamer *                    		T_PTROBJ_0006
+QTestData *                             		T_PTROBJ_0007
+QTestBasicStreamer *                    		T_PTROBJ_0008
+QTestEventLoop *                        		T_PTROBJ_0009
+QTest::QBenchmarkIterationController *  		T_PTROBJ_0010
+QTestLightXmlStreamer *                 		T_PTROBJ_0011
+QTestElement *                          		T_PTROBJ_0012
+QTestFileLogger *                       		T_PTROBJ_0013
+QTestXmlStreamer *                      		T_PTROBJ_0014
+QBool *                                 		T_PTROBJ_0015
+
+################################################################
+INPUT
+T_PTROBJ_0000
+    if (sv_derived_from($arg, \"Qt::Test::QSignalSpy\"))
+        $var = reinterpret_cast<$type>(SvIV((SV*)SvRV($arg)));
+    else
+        Perl_croak(aTHX_ \"$var is not of type Qt::Test::QSignalSpy\");
+
+T_PTROBJ_0001
+    if (sv_derived_from($arg, \"Qt::Test::QTestElementAttribute\"))
+        $var = reinterpret_cast<$type>(SvIV((SV*)SvRV($arg)));
+    else
+        Perl_croak(aTHX_ \"$var is not of type Qt::Test::QTestElementAttribute\");
+
+T_PTROBJ_0002
+    if (sv_derived_from($arg, \"Qt::Core::QSysInfo\"))
+        $var = reinterpret_cast<$type>(SvIV((SV*)SvRV($arg)));
+    else
+        Perl_croak(aTHX_ \"$var is not of type Qt::Core::QSysInfo\");
+
+T_PTROBJ_0003
+    if (sv_derived_from($arg, \"Qt::Core::QFlag\"))
+        $var = reinterpret_cast<$type>(SvIV((SV*)SvRV($arg)));
+    else
+        Perl_croak(aTHX_ \"$var is not of type Qt::Core::QFlag\");
+
+T_PTROBJ_0004
+    if (sv_derived_from($arg, \"Qt::Core::QIncompatibleFlag\"))
+        $var = reinterpret_cast<$type>(SvIV((SV*)SvRV($arg)));
+    else
+        Perl_croak(aTHX_ \"$var is not of type Qt::Core::QIncompatibleFlag\");
+
+T_PTROBJ_0005
+    if (sv_derived_from($arg, \"Qt::Core::QInternal\"))
+        $var = reinterpret_cast<$type>(SvIV((SV*)SvRV($arg)));
+    else
+        Perl_croak(aTHX_ \"$var is not of type Qt::Core::QInternal\");
+
+T_PTROBJ_0006
+    if (sv_derived_from($arg, \"Qt::Test::QTestXunitStreamer\"))
+        $var = reinterpret_cast<$type>(SvIV((SV*)SvRV($arg)));
+    else
+        Perl_croak(aTHX_ \"$var is not of type Qt::Test::QTestXunitStreamer\");
+
+T_PTROBJ_0007
+    if (sv_derived_from($arg, \"Qt::Test::QTestData\"))
+        $var = reinterpret_cast<$type>(SvIV((SV*)SvRV($arg)));
+    else
+        Perl_croak(aTHX_ \"$var is not of type Qt::Test::QTestData\");
+
+T_PTROBJ_0008
+    if (sv_derived_from($arg, \"Qt::Test::QTestBasicStreamer\"))
+        $var = reinterpret_cast<$type>(SvIV((SV*)SvRV($arg)));
+    else
+        Perl_croak(aTHX_ \"$var is not of type Qt::Test::QTestBasicStreamer\");
+
+T_PTROBJ_0009
+    if (sv_derived_from($arg, \"Qt::Test::QTestEventLoop\"))
+        $var = reinterpret_cast<$type>(SvIV((SV*)SvRV($arg)));
+    else
+        Perl_croak(aTHX_ \"$var is not of type Qt::Test::QTestEventLoop\");
+
+T_PTROBJ_0010
+    if (sv_derived_from($arg, \"Qt::Test::QTest::QBenchmarkIterationController\"))
+        $var = reinterpret_cast<$type>(SvIV((SV*)SvRV($arg)));
+    else
+        Perl_croak(aTHX_ \"$var is not of type Qt::Test::QTest::QBenchmarkIterationController\");
+
+T_PTROBJ_0011
+    if (sv_derived_from($arg, \"Qt::Test::QTestLightXmlStreamer\"))
+        $var = reinterpret_cast<$type>(SvIV((SV*)SvRV($arg)));
+    else
+        Perl_croak(aTHX_ \"$var is not of type Qt::Test::QTestLightXmlStreamer\");
+
+T_PTROBJ_0012
+    if (sv_derived_from($arg, \"Qt::Test::QTestElement\"))
+        $var = reinterpret_cast<$type>(SvIV((SV*)SvRV($arg)));
+    else
+        Perl_croak(aTHX_ \"$var is not of type Qt::Test::QTestElement\");
+
+T_PTROBJ_0013
+    if (sv_derived_from($arg, \"Qt::Test::QTestFileLogger\"))
+        $var = reinterpret_cast<$type>(SvIV((SV*)SvRV($arg)));
+    else
+        Perl_croak(aTHX_ \"$var is not of type Qt::Test::QTestFileLogger\");
+
+T_PTROBJ_0014
+    if (sv_derived_from($arg, \"Qt::Test::QTestXmlStreamer\"))
+        $var = reinterpret_cast<$type>(SvIV((SV*)SvRV($arg)));
+    else
+        Perl_croak(aTHX_ \"$var is not of type Qt::Test::QTestXmlStreamer\");
+
+T_PTROBJ_0015
+    if (sv_derived_from($arg, \"Qt::Core::QBool\"))
+        $var = reinterpret_cast<$type>(SvIV((SV*)SvRV($arg)));
+    else
+        Perl_croak(aTHX_ \"$var is not of type Qt::Core::QBool\");
+
+
+################################################################
+OUTPUT
+T_PTROBJ_0000
+    sv_setref_pv($arg, \"Qt::Test::QSignalSpy\", (void *)$var);
+
+T_PTROBJ_0001
+    sv_setref_pv($arg, \"Qt::Test::QTestElementAttribute\", (void *)$var);
+
+T_PTROBJ_0002
+    sv_setref_pv($arg, \"Qt::Core::QSysInfo\", (void *)$var);
+
+T_PTROBJ_0003
+    sv_setref_pv($arg, \"Qt::Core::QFlag\", (void *)$var);
+
+T_PTROBJ_0004
+    sv_setref_pv($arg, \"Qt::Core::QIncompatibleFlag\", (void *)$var);
+
+T_PTROBJ_0005
+    sv_setref_pv($arg, \"Qt::Core::QInternal\", (void *)$var);
+
+T_PTROBJ_0006
+    sv_setref_pv($arg, \"Qt::Test::QTestXunitStreamer\", (void *)$var);
+
+T_PTROBJ_0007
+    sv_setref_pv($arg, \"Qt::Test::QTestData\", (void *)$var);
+
+T_PTROBJ_0008
+    sv_setref_pv($arg, \"Qt::Test::QTestBasicStreamer\", (void *)$var);
+
+T_PTROBJ_0009
+    sv_setref_pv($arg, \"Qt::Test::QTestEventLoop\", (void *)$var);
+
+T_PTROBJ_0010
+    sv_setref_pv($arg, \"Qt::Test::QTest::QBenchmarkIterationController\", (void *)$var);
+
+T_PTROBJ_0011
+    sv_setref_pv($arg, \"Qt::Test::QTestLightXmlStreamer\", (void *)$var);
+
+T_PTROBJ_0012
+    sv_setref_pv($arg, \"Qt::Test::QTestElement\", (void *)$var);
+
+T_PTROBJ_0013
+    sv_setref_pv($arg, \"Qt::Test::QTestFileLogger\", (void *)$var);
+
+T_PTROBJ_0014
+    sv_setref_pv($arg, \"Qt::Test::QTestXmlStreamer\", (void *)$var);
+
+T_PTROBJ_0015
+    sv_setref_pv($arg, \"Qt::Core::QBool\", (void *)$var);
+
