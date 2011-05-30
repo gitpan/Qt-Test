@@ -7,15 +7,10 @@ use strict;
 use warnings;
 #use Carp;
 
-our $VERSION = '0.01_01';
+our $VERSION = '0.01_02';
 
 
 # FIXME: operator overload
-
-# enums
-# enum value in perl is enum item index number
-sub RepeatUntilValidMeasurement() { 0 }
-sub RunOnce() { 1 }
 
 
 1;
@@ -28,15 +23,26 @@ Qt::Test::QTest::QBenchmarkIterationController
 
 =over
 
-=item    QTest::QBenchmarkIterationController()
+=item   QTest::QBenchmarkIterationController()
 
-=item    QTest::QBenchmarkIterationController(QTest::QBenchmarkIterationController::RunMode runMode)
+=item   QTest::QBenchmarkIterationController()
 
-=item    ~QBenchmarkIterationController()
+=item   ~QBenchmarkIterationController()
 
-=item   bool isDone()
+=item  bool isDone()
 
-=item   void next()
+=item  void next()
+
+
+=back
+
+=head1 ENUM VALUES
+
+=over
+
+=item RepeatUntilValidMeasurement
+
+=item RunOnce
 
 
 =back

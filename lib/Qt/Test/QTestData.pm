@@ -7,11 +7,10 @@ use strict;
 use warnings;
 #use Carp;
 
-our $VERSION = '0.01_01';
+our $VERSION = '0.01_02';
 
 
 # FIXME: operator overload
-
 
 
 1;
@@ -24,17 +23,24 @@ Qt::Test::QTestData
 
 =over
 
-=item    ~QTestData()
+=item   ~QTestData()
 
-=item   void append(int type, const void * data)
+=item  void append(, )
 
-=item   void * data(int index)
+=item  void * data()
 
-=item   int dataCount()
+=item  int dataCount()
 
-=item   const char * dataTag()
+=item  const char * dataTag()
 
-=item   QTestTable * parent()
+=item  QTestTable * parent()
+
+
+=back
+
+=head1 ENUM VALUES
+
+=over
 
 
 =back

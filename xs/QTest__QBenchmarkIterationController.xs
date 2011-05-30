@@ -19,7 +19,7 @@ PROTOTYPES: DISABLE
 ################################################################
 
 ##  QTest::QBenchmarkIterationController()
-##  QTest::QBenchmarkIterationController(QTest::QBenchmarkIterationController::RunMode runMode)
+##  QTest::QBenchmarkIterationController()
   void
 QTest::QBenchmarkIterationController::new(...)
 PREINIT:
@@ -27,31 +27,33 @@ QTest::QBenchmarkIterationController *ret;
 QTest::QBenchmarkIterationController::RunMode arg10;
 PPCODE:
     switch(items) {
-    case 1:
+      case 1:
       {
-        ret = new QTest::QBenchmarkIterationController();
+        if (1) {
+      
+    ret = new QTest::QBenchmarkIterationController();
     ST(0) = sv_newmortal();
     sv_setref_pv(ST(0), "Qt::Test::QTest::QBenchmarkIterationController", (void *)ret);
     XSRETURN(1);
+    }
         break;
       }
-    case 2:
+      case 2:
       {
-        switch(SvIV(ST(1))) {
-    default:
-      Perl_croak(aTHX_ "wrong enum value for type QTest::QBenchmarkIterationController::RunMode passed in");
-    }
+        if (SvIOK(ST(1))) {
+      arg10 = (QTest::QBenchmarkIterationController::RunMode)SvIV(ST(1));
     ret = new QTest::QBenchmarkIterationController(arg10);
     ST(0) = sv_newmortal();
     sv_setref_pv(ST(0), "Qt::Test::QTest::QBenchmarkIterationController", (void *)ret);
     XSRETURN(1);
+    }
+	else
+            Perl_croak(aTHX_ "wrong number/type of arguments passed in");
         break;
       }
-    default:
-      {
+      default:
         Perl_croak(aTHX_ "wrong number/type of arguments passed in");
         break;
-      }
     }
 
 ##  ~QBenchmarkIterationController()
@@ -66,15 +68,46 @@ void
 QTest::QBenchmarkIterationController::isDone(...)
 PREINIT:
 PPCODE:
+    if (1) {
+      
     bool ret = THIS->isDone();
     ST(0) = sv_newmortal();
     ST(0) = boolSV(ret);
     XSRETURN(1);
+    }
 
 ## void next()
 void
 QTest::QBenchmarkIterationController::next(...)
 PREINIT:
 PPCODE:
+    if (1) {
+      
     (void)THIS->next();
     XSRETURN(0);
+    }
+
+
+
+
+################################################################
+#### 
+#### ENUMS
+#### 
+################################################################
+# RunMode::RepeatUntilValidMeasurement
+void
+RepeatUntilValidMeasurement()
+PPCODE:
+    ST(0) = sv_newmortal();
+    sv_setiv(ST(0), (IV)QTest::QBenchmarkIterationController::RepeatUntilValidMeasurement);
+    XSRETURN(1);
+
+
+# RunMode::RunOnce
+void
+RunOnce()
+PPCODE:
+    ST(0) = sv_newmortal();
+    sv_setiv(ST(0), (IV)QTest::QBenchmarkIterationController::RunOnce);
+    XSRETURN(1);

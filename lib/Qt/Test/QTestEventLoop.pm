@@ -7,11 +7,11 @@ use strict;
 use warnings;
 #use Carp;
 
-our $VERSION = '0.01_01';
+our $VERSION = '0.01_02';
+our $ISA     = qw/Qt::Core::QObject/;
 
 
 # FIXME: operator overload
-
 
 
 1;
@@ -24,19 +24,26 @@ Qt::Test::QTestEventLoop
 
 =over
 
-=item    QTestEventLoop(QObject * aParent = 0)
+=item   QTestEventLoop()
 
-=item    QTestEventLoop(QObject * aParent)
+=item   QTestEventLoop( = 0)
 
-=item   void changeInterval(int secs)
+=item  void changeInterval()
 
-=item   void enterLoop(int secs)
+=item  void enterLoop()
 
-=item   void exitLoop()
+=item  void exitLoop()
 
-=item   static QTestEventLoop & instance()
+=item  static QTestEventLoop & instance()
 
-=item   bool timeout()
+=item  bool timeout()
+
+
+=back
+
+=head1 ENUM VALUES
+
+=over
 
 
 =back
