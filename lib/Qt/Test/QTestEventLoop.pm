@@ -7,8 +7,7 @@ use strict;
 use warnings;
 #use Carp;
 
-our $VERSION = '0.01_02';
-our $ISA     = qw/Qt::Core::QObject/;
+our $VERSION = '0.01_03';
 
 
 # FIXME: operator overload
@@ -24,13 +23,13 @@ Qt::Test::QTestEventLoop
 
 =over
 
-=item   QTestEventLoop()
+=item   QTestEventLoop(QObject * aParent)
 
-=item   QTestEventLoop( = 0)
+=item   QTestEventLoop(QObject * aParent = 0)
 
-=item  void changeInterval()
+=item  void changeInterval(int secs)
 
-=item  void enterLoop()
+=item  void enterLoop(int secs)
 
 =item  void exitLoop()
 

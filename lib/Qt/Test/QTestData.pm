@@ -7,7 +7,7 @@ use strict;
 use warnings;
 #use Carp;
 
-our $VERSION = '0.01_02';
+our $VERSION = '0.01_03';
 
 
 # FIXME: operator overload
@@ -25,9 +25,9 @@ Qt::Test::QTestData
 
 =item   ~QTestData()
 
-=item  void append(, )
+=item  void append(int type, const void * data)
 
-=item  void * data()
+=item  void * data(int index)
 
 =item  int dataCount()
 

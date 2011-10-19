@@ -7,7 +7,7 @@ use strict;
 use warnings;
 #use Carp;
 
-our $VERSION = '0.01_02';
+our $VERSION = '0.01_03';
 
 
 # FIXME: operator overload
@@ -25,7 +25,7 @@ Qt::Test::QTest::QBenchmarkIterationController
 
 =item   QTest::QBenchmarkIterationController()
 
-=item   QTest::QBenchmarkIterationController()
+=item   QTest::QBenchmarkIterationController(QTest::QBenchmarkIterationController::RunMode runMode)
 
 =item   ~QBenchmarkIterationController()
 

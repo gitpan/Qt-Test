@@ -27,7 +27,7 @@ CODE:
     if(THIS != 0 && !SvREADONLY(SvRV(ST(0))))
         delete THIS;
 
-## void append(, )
+## void append(int type, const void * data)
 void
 QTestData::append(...)
 PREINIT:
@@ -41,7 +41,7 @@ PPCODE:
     XSRETURN(0);
     }
 
-## void * data()
+## void * data(int index)
 void
 QTestData::data(...)
 PREINIT:

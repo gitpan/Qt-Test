@@ -18,8 +18,8 @@ PROTOTYPES: DISABLE
 #### 
 ################################################################
 
-##  QTestEventLoop()
-##  QTestEventLoop( = 0)
+##  QTestEventLoop(QObject * aParent)
+##  QTestEventLoop(QObject * aParent = 0)
   void
 QTestEventLoop::new(...)
 PREINIT:
@@ -66,7 +66,7 @@ PPCODE:
 
 
 
-## void changeInterval()
+## void changeInterval(int secs)
 void
 QTestEventLoop::changeInterval(...)
 PREINIT:
@@ -78,7 +78,7 @@ PPCODE:
     XSRETURN(0);
     }
 
-## void enterLoop()
+## void enterLoop(int secs)
 void
 QTestEventLoop::enterLoop(...)
 PREINIT:

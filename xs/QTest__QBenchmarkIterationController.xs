@@ -19,7 +19,7 @@ PROTOTYPES: DISABLE
 ################################################################
 
 ##  QTest::QBenchmarkIterationController()
-##  QTest::QBenchmarkIterationController()
+##  QTest::QBenchmarkIterationController(QTest::QBenchmarkIterationController::RunMode runMode)
   void
 QTest::QBenchmarkIterationController::new(...)
 PREINIT:
