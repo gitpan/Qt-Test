@@ -5,10 +5,11 @@
 
 # change 'tests => 1' to 'tests => last_test_to_print';
 
-use Test::More tests => 5;
+use Test::More tests => 6;
 BEGIN {
 use_ok('Qt::Test');
 use_ok('Qt::Test');
+use_ok('Qt::Test::Template');
 use_ok('Qt::Test::QTestData');
 use_ok('Qt::Test::QTestEventLoop');
 use_ok('Qt::Test::QTest::QBenchmarkIterationController');

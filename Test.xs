@@ -25,6 +25,8 @@
 
 typedef bool (*T_FPOINTER_QINTERNALCALLBACK_QNAMESPACE)(void **);
 typedef void (*T_FPOINTER_QTMSGHANDLER_QGLOBAL)(QtMsgType,const char *);
+typedef QList<QVariant> T000;
+typedef QList<QList<QVariant> > T001;
 
 MODULE = Qt		PACKAGE = Qt
 PROTOTYPES: DISABLE
@@ -32,3 +34,5 @@ PROTOTYPES: DISABLE
 INCLUDE:		xs/QTest__QBenchmarkIterationController.xs
 INCLUDE:		xs/QTestData.xs
 INCLUDE:		xs/QTestEventLoop.xs
+INCLUDE:		xs/T000.xs
+INCLUDE:		xs/T001.xs
